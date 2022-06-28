@@ -7,13 +7,14 @@ sudo vi script.sh
 ```
 
 Insert this content to script.sh
-
+```bash
 for IMAGES in `ls -a1 *.gz`
 do
   gzip -d $IMAGES
 done
 mkdir -p /tmp/cwf-images
 cp cwf_*.tar /tmp/cwf-images
+```
 
 After this save and exit
 
